@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/layout1}">
+<head>
+  <meta charset="UTF-8">
+  <title>술</title>
+</head>
+<body>
+<div layout:fragment="content">
+  <div class="container">
+    <li><a th:href="@{'/soju'}">소주페이지 바로가기</a></li>
+    <li><a th:href="@{'/beer'}">맥주페이지 바로가기</a></li>
+  </div>
+</div>
+
+</body>
+</html>

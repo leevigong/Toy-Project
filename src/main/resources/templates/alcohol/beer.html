@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/layout1}">
+<head>
+  <meta charset="UTF-8">
+  <title>맥쭈</title>
+</head>
+<body>
+<div layout:fragment="content">
+  <main role="main">
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1>세계맥주</h1>
+        <p class="lead text-muted">다양한 세계맥주를 즐겨보세요.</p>
+        <p>
+          <a href="#" class="btn btn-dark my-2">라거 맥주</a>
+          <a href="#" class="btn btn-dark my-2">에일 맥주</a>
+        </p>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img th:src="@{/images/TERRA.jpg}" alt="TERRA" class="img-thumbnail">
+              <div class="card-body">
+                <h5 class="card-text">테라</h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-danger">좋아요</button>
+                  </div>
+                  <small class="text-muted">라거</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img th:src="@{/images/CASS.jpg}" alt="CASS" class="img-thumbnail" style="width:348px; height:348px;">
+              <div class="card-body">
+                <h5 class="card-text">카스</h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-danger">좋아요</button>
+                  </div>
+                  <small class="text-muted">라거</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img th:src="@{/images/GUINNESS.jpg}" alt="GUINNESS" class="img-thumbnail" style="width:348px; height:348px;">
+              <div class="card-body">
+                <h5 class="card-text">기네스</h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-danger">좋아요</button>
+                  </div>
+                  <small class="text-muted">에일</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img th:src="@{/images/Hoegaarden.jpg}" alt="Hoegaarden" class="img-thumbnail">
+              <div class="card-body">
+                <h5 class="card-text">호가든</h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-danger">좋아요</button>
+                  </div>
+                  <small class="text-muted">에일</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>

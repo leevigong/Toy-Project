@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:fragment="header">
+    <!-- 로그인/회원가입 -->
+    <div class="gnb_p">
+        <div class="inner">
+            <ul>
+                <li><a href="/members/login">로그인</a></li>
+                <li><a href="/members/logout">로그아웃</a></li>
+                <li><a href="/members/new">회원가입</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class = "header_p">
+        <!-- 로고 -->
+        <div class ="head_container">
+            <div class="header_logo">
+                <h1>
+                    <a href="/">한잔해</a>
+                </h1>
+            </div>
+        </div>
+        <!-- 네비게이션바 -->
+        <div id="lnb_p" class="lnb_p">
+            <ul class="dep1">
+                <li style="width:16.6%">
+                    <a href = "/alcohol">술</a>
+                    <div>
+                        <ul class="dep2">
+                            <li><a href="/soju">소주</a></li>
+                            <li><a href="/beer">맥주</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li style="width:16.6%">
+                    <a href = "/recipe">조합</a>
+                </li>
+                <li style="width:16.6%">
+                    <a href = "/board/list">커뮤니티</a>
+                    <div>
+                        <ul class="dep2">
+                            <li><a href="/board/list">자유게시판</a></li>
+                            <li><a href="/page/page1">알뜰신잡</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li style="width:16.6%">
+                    <a href = "/game">술게임</a>
+                </li>
+                <li style="width:16.6%">
+                    <a href = "/cheers">건배사</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</html>

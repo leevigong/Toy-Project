@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/layout1}">
+<head>
+  <meta charset="UTF-8">
+  <title>조합 레시피</title>
+</head>
+<body>
+<div layout:fragment="content">
+  <div class="container">
+    <h1>술 조합 레시피</h1>
+
+  </div>
+  <div class="container">
+    <div class="row">
+
+      <div class="card" style="width: 17rem;">
+          <img th:src="@{/images/recipe1.jpg}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">기본 메로나주</h5>
+            <p class="card-text">소주1 : 사이다1 : 메로나1</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">#아이스크림</li>
+          </ul>
+      </div>
+
+      <div class="card" style="width: 17rem;">
+        <img th:src="@{/images/recipe3.jpg}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">폴라포주</h5>
+          <p class="card-text">소주1 : 사이다1 : 폴라포3</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">#아이스크림</li>
+        </ul>
+      </div>
+
+      <div class="card" style="width: 17rem;">
+        <img th:src="@{/images/recipe4.jpg}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">홍차주</h5>
+          <p class="card-text">소주1 : 홍차2</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"> #기범주</li>
+        </ul>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+</body>
+</html>

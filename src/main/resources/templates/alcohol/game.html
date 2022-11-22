@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/layout1}">
+<head>
+  <meta charset="UTF-8">
+  <title>술게임</title>
+</head>
+<body>
+<div layout:fragment="content">
+  <div class="container">
+    <div class="row">
+      <button type="button" class="btn btn-warning btn-lg mx-2 my-2" data-toggle="popover" title="출석부~ 출석부 출석부~ 출석부" data-content="대상 이름을 부르면서 전혀 다른 대상을 지목하고 지목당한 사람이 아닌 이름 불린 사람이 대답해야한다. ">출석부 게임</button>
+      <button type="button" class="btn btn-warning btn-lg mx-2 my-2">손병호 게임</button>
+      <button type="button" class="btn btn-warning btn-lg mx-2 my-2">동물의 왕국</button>
+      <button type="button" class="btn btn-warning btn-lg mx-2 my-2">귓속말 게임</button>
+      <button type="button" class="btn btn-warning btn-lg mx-2 my-2">베스킨 라빈스</button>
+      <button type="button" class="btn btn-warning btn-lg mx-2 my-2">호빵찐빵대빵</button>
+    </div>
+    <div class="row">
+      <button type="button" class="btn btn-warning btn-lg mx-2 my-2">경마게임</button>
+      <button type="button" class="btn btn-warning btn-lg mx-2 my-2">훈민정음</button>
+    </div>
+  </div>
+  <script>
+    $( function () {
+      $( '[data-toggle="popover"]' ).popover()
+    } );
+  </script>
+</div>
+
+
+</body>
+</html>
